@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <StartupObject></StartupObject>
+    <ApplicationIcon>Iconfor.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Iconfor.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAdmin" Version="2.4.0" />
+    <PackageReference Include="Google.Cloud.Firestore.Admin.V1" Version="3.7.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="8.0.3" />
+    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="Okta.Sdk" Version="7.0.5" />
+    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackGammon_API\BackGammon_API.csproj" />
+    <ProjectReference Include="..\ChatServer\ChatServer.csproj" />
+    <ProjectReference Include="..\LoginWpfLogic\LoginWpfLogic.csproj" />
+   
+  </ItemGroup>
+
+  <ItemGroup>
+	<Folder Include="Hubs" />
+  </ItemGroup>
+
+</Project>
